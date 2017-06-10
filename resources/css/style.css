@@ -11,6 +11,7 @@
 
 .column-left {
   width: 65%;
+  padding: 0 24px;
 }
 
 .column-right {
@@ -20,10 +21,15 @@
 h2 {
   font-size: 2rem;
   text-align: center;
+  padding-top: 2rem;
 }
 
 article {
   background-color: white;
+}
+
+.column-right article{
+  padding: 16px;
 }
 
 /*Header - includes Logo and navigation*/
@@ -87,7 +93,6 @@ main {
 }
 
 .content {
-  display: block;
 }
 
 #academy-life .column-left{
@@ -116,7 +121,6 @@ aside {
 #academy-life article {
   align-items: center;
   border-bottom: 1px solid #d8d8d8;
-  padding: 16px;
 }
 
 article .content {
@@ -126,7 +130,6 @@ article .content {
 #learning {
   justify-content: center;
   background-color: #d8d8d8;
-  padding: 32px 0;
 }
 
 div.flex-container {
