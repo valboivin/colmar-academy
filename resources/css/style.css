@@ -17,6 +17,15 @@
   width: 35%;
 }
 
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+article {
+  background-color: white;
+}
+
 /*Header - includes Logo and navigation*/
 
 header {
@@ -85,6 +94,12 @@ main {
   padding: 32px 24px;
 }
 
+
+#academy-life h2 {
+  text-align: left;
+}
+
+
 .column-left img {
   width: 100%;
 }
@@ -98,12 +113,32 @@ aside {
   border-left: 1px solid #d8d8d8;
 }
 
-article {
+#academy-life article {
   align-items: center;
-  padding: 16px;
   border-bottom: 1px solid #d8d8d8;
+  padding: 16px;
 }
 
 article .content {
   padding-left: 16px;
+}
+
+#learning {
+  justify-content: center;
+  background-color: #d8d8d8;
+  padding: 32px 0;
+}
+
+div.flex-container {
+  justify-content: center;
+}
+
+#learning article{
+  width: 25%;
+  margin: 16px;
+}
+
+#learning img {
+  width: 100%;
+  height: auto;
 }
