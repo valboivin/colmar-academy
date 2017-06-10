@@ -57,11 +57,11 @@ nav {
   padding: 0 24px;
 }
 
-nav ul {
+ul {
   list-style-type: none;
 }
 
-nav li{
+li{
   display: inline-block;
   padding: 0 8px;
   list-style-type: none;
@@ -76,7 +76,7 @@ li a {
 
 /*Offsetting from fixed header*/
 main {
-  top: 65px;
+  top: 64px;
   position: relative;
 }
 
@@ -144,4 +144,12 @@ div.flex-container {
 #learning img {
   width: 100%;
   height: auto;
+}
+
+footer {
+  position: relative;
+  top:65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 48px 24px;
 }
