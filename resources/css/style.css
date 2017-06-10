@@ -52,3 +52,20 @@ main {
   top: 65px;
   position: relative;
 }
+
+.jumbotron {
+  align-items: center;
+  justify-content: center;
+  background-color: #d8d8d8;
+  padding: 32px 24px;
+}
+
+.jumbotron img {
+  width: 60%;
+  height: auto;
+}
+
+.content {
+  display: block;
+  padding: 40px;
+}
