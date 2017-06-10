@@ -1,0 +1,54 @@
+/*Universel style*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*Header - includes Logo and navigation*/
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+
+  padding: 0 24px;
+
+  height: 64px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  padding: 0 24px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-block;
+  padding: 0 8px;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/*Main Section*/
+
+/*Offsetting from fixed header*/
+main {
+  top: 65px;
+  position: relative;
+}
