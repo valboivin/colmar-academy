@@ -240,9 +240,25 @@ div.flex-container {
   margin: 16px;
 }
 
+#learning .overlay {
+  background-color: #35353d;
+}
+
+#learning .content {
+  background-color: #ffffff;
+  padding-bottom: 24px;
+}
+
 #learning img {
   width: 100%;
   height: auto;
+  background-color: #35353d;
+  opacity: 0.2;
+}
+
+#learning img:hover {
+  opacity: 1;
+  transition: opacity .3s;
 }
 
 
