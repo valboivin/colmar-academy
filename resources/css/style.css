@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
+/*Layout style - Column left and right and general positioning*/
+
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .column-left {
@@ -18,10 +19,16 @@
   width: 35%;
 }
 
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 2rem;
+#learning, #thesis {
+  padding-top: 32px;
+}
+
+.column-right article:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.column-right article:first-child {
+  padding-top: 32px;
 }
 
 article {
@@ -31,6 +38,57 @@ article {
 .column-right article{
   padding: 16px;
 }
+
+/*Fonts style*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #35353d;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #8D7759;
+  padding: 1rem 0;
+}
+
+h4, p {
+  color: #35353d;
+  font-size: 0.8rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-bottom: .5rem;
+  font-weight: 300;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.4rem;
+  padding-bottom: .5rem;
+}
+
+a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #8D7759;
+}
+
+a:hover {
+  color: #35353d;
+}
+
 
 /*Header - includes Logo and navigation*/
 
@@ -45,7 +103,7 @@ header {
   height: 64px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 1px solid #35353d;
 }
 
 .logo {
@@ -57,18 +115,17 @@ nav {
   padding: 0 24px;
 }
 
-ul {
-  list-style-type: none;
-}
-
 li{
   display: inline-block;
   padding: 0 8px;
-  list-style-type: none;
 }
 
 li a {
   text-decoration: none;
+}
+
+li a:hover {
+  color: #35353d;
 }
 
 
@@ -80,20 +137,56 @@ main {
   position: relative;
 }
 
+/* Jumbotron/Page banner section */
+
 .jumbotron {
   align-items: center;
   justify-content: center;
-  background-color: #d8d8d8;
-  padding: 32px 24px;
+  background-color: #35353d;
+  padding: 32px 0;
 }
 
 .jumbotron img {
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
-.content {
+h1{
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1.5rem;
 }
+
+.content {
+  padding: 0 16px;
+}
+
+.jumbotron p {
+  color: #f1f1f0;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+
+.jumbotron button {
+  width: 60%;
+  font-weight: 600;
+  font-size: .8rem;
+  padding: .5rem;
+  background-color: #8D7759;
+  border: 0px;
+}
+
+.jumbotron button:hover {
+  background-color: #f1f1f0;
+  color: #8D7759;
+}
+
 
 #academy-life .column-left{
   padding: 32px 24px;
@@ -107,6 +200,7 @@ main {
 
 .column-left img {
   width: 100%;
+  height: auto;
 }
 
 .column-right img {
@@ -118,7 +212,7 @@ aside {
   border-left: 1px solid #d8d8d8;
 }
 
-#academy-life article {
+#academy-life article, #thesis article {
   align-items: center;
   border-bottom: 1px solid #d8d8d8;
 }
@@ -127,13 +221,18 @@ article .content {
   padding-left: 16px;
 }
 
+
+/* Learning Section with grid of courses */
+
 #learning {
   justify-content: center;
-  background-color: #d8d8d8;
+  flex-wrap: wrap;
+  background-color: #f5f5f4;
 }
 
 div.flex-container {
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #learning article{
@@ -145,6 +244,9 @@ div.flex-container {
   width: 100%;
   height: auto;
 }
+
+
+/* Footer Section with copyright */
 
 footer {
   position: relative;
