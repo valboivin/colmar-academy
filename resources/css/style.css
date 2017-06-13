@@ -52,9 +52,15 @@ article {
 /* General media queries */
 
 @media only screen and (max-width: 600px) {
+
+  .flex-container {
+    flex-direction: column;
+  }
+
   .column-left, .column-right {
     width: 100%;
   }
+
 }
 
 /*Fonts style*/
@@ -144,32 +150,6 @@ header {
   font-weight: 600;
 }
 
-@media only screen and (min-width: 600px) {
-
-  nav.mobile {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .logo.desktop {
-    display: none;
-  }
-
-  nav.desktop {
-    display: none;
-  }
-
-  nav.mobile {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: baseline;
-    width: 100%;
-  }
-
-}
-
-
 nav.desktop {
   padding-left: 1.5rem;
 }
@@ -185,6 +165,28 @@ li a {
 
 li a:hover {
   color: #35353d;
+}
+
+/*Media Queries for Header/Navigation */
+
+@media only screen and (min-width: 600px) {
+
+  nav.mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo.desktop, nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+ }
 }
 
 
@@ -208,6 +210,25 @@ main {
 .jumbotron img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron, .column-left {
+    padding: 0;
+  }
+
+  .jumbotron.column-left {
+    display: flex;
+    height: 11.25rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .jumbotron img {
+    overflow: hidden;
+    object-fit: cover;
+  }
+
 }
 
 h1{
@@ -313,7 +334,13 @@ div.flex-container {
 }
 
 
-@media only screen and (max-width: 800px) {
+/* Media Queries: Tablet and mobile version for the Learning Section*/
+
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+  #learning .flex-container {
+    flex-direction: row;
+  }
+
   #learning article{
     width: 40%;
   }
@@ -339,12 +366,31 @@ div.flex-container {
     color: #ffffff;
     padding: 0;
   }
+
+  #learning {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f5f5f4;
+  }
 }
 
 /* Thesis Section */
 
 #thesis {
   padding-bottom: 24px;
+}
+
+/* Media Queries: Tablet and mobile version for the Thesis Section*/
+
+@media only screen and (max-width: 760px) {
+  #thesis .column-right, #thesis h3, #thesis p {
+    display: none;
+  }
+
+  #thesis .column-left {
+    width: 100%;
+    padding: 0;
+  }
+
 }
 
 /* Footer Section with copyright */
@@ -360,17 +406,4 @@ footer {
 
 footer .copyright, footer a {
   font-size: 0.7rem;
-}
-
-
-
-@media only screen and (max-width: 1024px) {
-
-}
-
-
-/* Moble version */
-
-@media only screen and (max-width: 1024px) {
-
 }
