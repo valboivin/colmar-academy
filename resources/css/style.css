@@ -51,7 +51,7 @@ article {
 
 /* General media queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
 
   .flex-container {
     flex-direction: column;
@@ -59,6 +59,14 @@ article {
 
   .column-left, .column-right {
     width: 100%;
+  }
+
+  .column-right article:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .column-right article:first-child {
+    padding-top: 1rem;
   }
 
 }
@@ -224,7 +232,7 @@ main {
   height: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
   .jumbotron, .column-left {
     padding: 0;
   }
@@ -267,18 +275,45 @@ h1{
 
 .jumbotron button {
   width: 60%;
-  font-weight: 600;
+  font-weight: 400;
   font-size: .8rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
   padding: .5rem;
   background-color: #8D7759;
   border: 0px;
+  color: #ffffff;
 }
 
 .jumbotron button:hover {
   background-color: #f1f1f0;
-  color: #8D7759;
+  color: #35353d;
 }
 
+/* Media Queries: Tablet and mobile for Jumbotron section */
+
+@media only screen and (max-width: 760px) {
+  .jumbotron h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .jumbotron br {
+    display: none;
+  }
+
+  .jumbotron button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+  .jumbotron .column-right {
+    padding: 2rem 1rem;
+  }
+
+}
 
 /* Life at the Academy section */
 
@@ -303,6 +338,43 @@ h1{
 article .content {
   padding-left: 16px;
 }
+
+
+@media only screen and (min-width: 760px) {
+
+#academy-life img.mobile{
+  display: none;
+  }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+#academy-life .flex-container {
+    flex-direction: column;
+  }
+
+
+#academy-life img.desktop {
+  display: none;
+}
+
+#academy-life img.mobile{
+  display: block;
+  width: 100%;
+  }
+
+#academy-life article {
+  align-items: flex-start;
+  }
+}
+/* Media Queries: Mobile for Academy-life section */
+
+@media only screen and (max-width: 450px) {
+  #academy-life .column-left{
+    display: none;
+  }
+
 
 
 /* Learning Section with grid of courses */
