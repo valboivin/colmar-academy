@@ -181,12 +181,24 @@ li a:hover {
     display: none;
   }
 
+  header.flex-container {
+    flex-direction: row;
+    align-items: center;
+    }
+
   nav.mobile {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
  }
+
+  nav.mobile ul {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 100%;
+  }
 }
 
 
@@ -218,14 +230,13 @@ main {
   }
 
   .jumbotron.column-left {
-    display: flex;
+    display: block;
     height: 11.25rem;
     max-width: 100%;
     overflow: hidden;
   }
 
   .jumbotron img {
-    overflow: hidden;
     object-fit: cover;
   }
 
