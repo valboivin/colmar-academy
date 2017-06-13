@@ -233,18 +233,18 @@ main {
 }
 
 @media only screen and (max-width: 575px) {
+
   .jumbotron, .column-left {
     padding: 0;
   }
 
-  .jumbotron.column-left {
-    display: block;
+  .jumbotron .column-left {
     height: 11.25rem;
-    max-width: 100%;
     overflow: hidden;
   }
 
   .jumbotron img {
+    display: block;
     object-fit: cover;
   }
 
