@@ -273,19 +273,22 @@ h1{
   padding-bottom: 1.5rem;
 }
 
-.jumbotron button {
+.jumbotron a {
+  display: block;
   width: 60%;
   font-weight: 400;
   font-size: .8rem;
   letter-spacing: 0.05rem;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   padding: .5rem;
   background-color: #8D7759;
   border: 0px;
   color: #ffffff;
 }
 
-.jumbotron button:hover {
+.jumbotron a:hover {
   background-color: #f1f1f0;
   color: #35353d;
 }
@@ -297,12 +300,8 @@ h1{
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
-
-  .jumbotron br {
-    display: none;
-  }
-
-  .jumbotron button {
+  
+  .jumbotron a {
     width: 100%;
   }
 }
