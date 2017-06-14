@@ -44,8 +44,14 @@ article {
   height: auto;
 }
 
-.column-right img {
+.img-container {
   width: 35%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.img-container img {
+  width: 100%;
   height: auto;
 }
 
@@ -340,10 +346,11 @@ h1{
   transition: background-color .2 ease;
 }
 
-
 article .content {
   padding-left: 16px;
 }
+
+/* Media queries for the academy-life section - Mobile and Tablet*/
 
 @media only screen and (max-width: 450px) {
   #academy-life .column-left {
@@ -373,14 +380,17 @@ article .content {
 
 #academy-life img.mobile{
   display: block;
-  width: 100%;
   }
 
 #academy-life article {
   align-items: flex-start;
   }
-}
 
+.column-right .img-container {
+  width: 100%;
+  }
+
+}
 /* Learning Section with grid of courses */
 
 #learning {
