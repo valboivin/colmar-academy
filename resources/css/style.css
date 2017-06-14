@@ -158,7 +158,7 @@ header {
   align-items: center;
   text-decoration: none;
 }
-nav.desktop {
+ul.desktop {
   padding-left: 1.5rem;
 }
 
@@ -179,13 +179,13 @@ li a:hover {
 
 @media only screen and (min-width: 600px) {
 
-  nav.mobile {
+  ul.mobile {
     display: none;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .logo.desktop, nav.desktop {
+  .logo.desktop, ul.desktop {
     display: none;
   }
 
@@ -194,13 +194,13 @@ li a:hover {
     align-items: center;
     }
 
-  nav.mobile {
+  nav {
     display: flex;
     align-items: center;
     width: 100%;
  }
 
-  nav.mobile ul {
+  ul.mobile {
     display: flex;
     flex: 1;
     align-items: baseline;
