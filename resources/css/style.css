@@ -24,7 +24,7 @@
 }
 
 .column-right article:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
 }
 
 .column-right article:first-child {
@@ -62,7 +62,7 @@ article {
   }
 
   .column-right article:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: #f8f8f8;
   }
 
   .column-right article:first-child {
@@ -82,7 +82,7 @@ h2 {
   font-weight: 700;
   font-size: 1.75rem;
   text-align: center;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
   color: #35353d;
 }
 
@@ -93,7 +93,7 @@ h3 {
   padding: 1rem 0;
 }
 
-h4, p {
+h4, p, blockquote {
   color: #35353d;
   font-size: 0.8rem;
 }
@@ -101,14 +101,14 @@ h4, p {
 h4 {
   text-transform: uppercase;
   font-size: 0.8rem;
-  padding-bottom: .5rem;
+  margin-bottom: .5rem;
   font-weight: 300;
 }
 
-p {
+p, blockquote {
   font-weight: 400;
   line-height: 1.4rem;
-  padding-bottom: .5rem;
+  margin-bottom: .5rem;
 }
 
 a {
@@ -125,6 +125,7 @@ a:hover {
 .credits {
   font-size: .7rem;
   font-style: italic;
+  margin-top: 2rem;
 }
 
 /*Header - includes Logo and navigation*/
@@ -300,7 +301,7 @@ h1{
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
-  
+
   .jumbotron a {
     width: 100%;
   }
@@ -333,6 +334,12 @@ h1{
   align-items: center;
   border-bottom: 1px solid #d8d8d8;
 }
+
+#academy-life article:hover, #thesis article:hover {
+  background-color: #efefef;
+  transition: background-color .2 ease;
+}
+
 
 article .content {
   padding-left: 16px;
@@ -379,7 +386,7 @@ article .content {
 #learning {
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #f5f5f4;
+  background-color: #f6f6f6;
 }
 
 div.flex-container {
@@ -482,7 +489,7 @@ div.flex-container {
 
 /* Footer Section with copyright */
 
-footer {
+footer[role="contentinfo"] {
   position: relative;
   top:65px;
   display: flex;
@@ -491,7 +498,7 @@ footer {
   border-top: 1px solid #f5f5f4;
 }
 
-footer .copyright, footer a {
+.copyright, footer a {
   font-size: 0.7rem;
 }
 
